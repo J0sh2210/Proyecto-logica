@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+p {
+    font-size: 12px;
+}
+
+header {
+    background: url(img/Imagen\ header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 75px;
+    color: rgba(250, 250, 250, 0.575);
+    padding: 100px 0;
+    letter-spacing: 1px;
+    font-family: 'Kanit', sans-serif;
+   -webkit-text-stroke: 3px #633b00c9; 
+}
+
+
+
+.barra-superior ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.barra-superior li {
+    display:  inline;
+    text-align: center;
+    margin: 0px 60px 0px;
+    padding-top: 100px;
+}
+.barra-superior a {
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgba(168, 99, 21, 0.267);
+    border: 5px solid rgba(160, 93, 16, 0.658);
+    -webkit-text-stroke: 2px #633b00c9; 
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 25px;
+}
+
+.barra-superior a:hover {
+    -webkit-text-stroke: 2px rgb(145, 85, 16) ; 
+    color: rgb(238, 196, 141);
+   background-color: rgba(168, 105, 33, 0.795);
+   box-shadow: 0 0 10px  rgba(168, 99, 21, 0.849), 0 0 20px  rgba(168, 99, 21, 0.856), 0 0 40px  rgb(168, 99, 21), 0 0 80px  rgb(168, 99, 21);
+   
+   transition-delay: 0.1s;
+}
+
+.datos {
+    margin-top: 50px;
+  ;
+    text-decoration: dashed;
+}
+
+.datos h3 {
+    font-size: 30px;
+    
+    font-family: 'Lobster', cursive;
+    animation: mover 3s 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes mover {
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+
+.datos p {
+    font-family: 'Cute Font', cursive;
+    font-size: 30px;
+    animation: moverp 3s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes moverp {
+    from {
+        transform: translateX(1000px);
+        animation-delay: 3s;
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+    
+}
+
+.contacto h3 {
+    font-size: 30px;
+    
+    font-family: 'Lobster', cursive;
+    animation: movercon 3s 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes movercon {
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+.contacto p {
+    font-family: 'Cute Font', cursive;
+    font-size: 30px;
+    animation: movercontac 3s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes movercontac {
+    from {
+        transform: translateX(-1000px);
+        animation-delay: 3s;
+    }
+
+    to {
+        transform: translateX(310px);
+    }
+    
+}

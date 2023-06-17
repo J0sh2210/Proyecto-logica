@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body class="pag">
+    <div>
+    <div class="flex-container Bar">
+       <div class="izquierda">
+        <img class="imagen" src="hombre.gif"> <h3 class="letra">Comentarios</h3>
+        
+          <a class="boton" href="../Menu/index.html" >Regresar al menu</a>
+        
+       </div>
+      
+        <div class="derecha">
+         <strong id="nombreus" class="Usuarionombre">Nombre de Usuario</strong>
+          <button class="Iniciar" id="btniniciar">Iniciar</button>
+          <button class="Salir" id="btnsalir">Cerrar</button> 
+        </div>
+    </div>
+    
+    <hr>
+    <div class="flex-container fila">
+        <div class="mensajes comentarioschat" id="mensajesChat" >
+          Los comentarios aparecerán cuando inicies sesión
+        </div>
+    </div>
+
+    <div class="flex-container fila">
+        <textarea id="textomensaje" class="texto" placeholder=" Escribe tu mensaje aqui">
+        </textarea>
+        <button class="enviarm" id="enviarMensajeBtn">►</button>
+     </div>
+     <br>
+<hr class="linea">
+     <div class="container abajo" >
+         <h3 class="problematitulo">Reportar problema</h3>
+        <p class="textprob">Aqui puedes escribrir el problema que tengas y te enviaremos un    correo  por Gmail  para comunicarnos contigo.</p>
+       <div class="izquierda">
+       <textarea id="problemtext" class="problemtext" placeholder="Escribe tu problema aqui"></textarea>
+       <button class="problemabtn" id="problemabtn">►</button> 
+       </div>
+     </div>
+     <div>
+        <img  class= "club " src="clubpenguin.gif">
+      </div>
+       
+      
+    <audio  class="audio" controls autoplay >
+      <source  src="cancion.mp3"  type="audio/mpeg">
+    </audio>
+    </div>
+   <script src="script.js" type="module" ></script>
+  </body>
+ </html>

@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: monospace;
+}
+
+header{
+    background: url(img/modelo-vista-superior-cubierto-ropa.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+header h1{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 75px;
+    color: rgb(250, 250, 250);
+    padding: 100px 0;
+    font-family: 'Lobster', cursive;
+   -webkit-text-stroke: 2px #630000; 
+}
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+.contenedor .contenedor-produ{
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+.contenedor .contenedor-produ .produ{
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #3a1208;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+.contenedor-produ .produ:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor-produ .produ .img-produ{
+    width: 100%;
+}
+.contenedor-produ .produ .nombre-produ{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenedor-produ .produ .precio-produ{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.contenedor-produ .produ .boton-produ{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: black;
+    color: antiquewhite;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.carrito{
+    border: 1px solid #666;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+    opacity: 0;
+    margin-right: -100%;
+}
+.carrito .header-carrito{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+.carrito .carrito-prod{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+}
+.carrito .carrito-prod img{
+    margin-right: 20px;
+}
+.carrito .carrito-prod .carrito-produ-title{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.carrito .carrito-prod .cantidad-select{
+    display: inline-block;
+    margin-right: 25px;
+}
+.carrito .carrito-prod .carrito-cant-produ{
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display:inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+.carrito .carrito-prod .cantidad-select i{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer; 
+}
+.carrito .carrito-prod .carrito-produ-precio{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.carrito .carrito-prod .btn-eliminar{
+    position: absolute;
+    right: 15px;
+    top:15px;
+    color: black;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+.carrito .carrito-prod .btn-eliminar i{
+    pointer-events: none;
+}
+.carrito-total{
+    background-color: #f3f3f3;
+    padding: 30px;
+}
+.carrito-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.carrito-total .btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: black;
+    color: #f3f3f3;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.carrito-total .btn-pagar:hover{
+    scale: 1.05;
+}
+
+@media screen and (max-width:850px) {
+    .contenedor{
+        display:block;
+    }
+    .contenedor-produ{
+        width: 100% !important;
+    }
+    .carrito{
+        width: 100%;
+    }
+}
+
+.menu  {
+    margin: 20px;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+    font-family: lobster, cursive;
+    font-size: 25px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 2px #630000;
+    background-color: #3a120844;
+    border-radius: 25px;
+    
+}
